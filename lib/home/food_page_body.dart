@@ -2,7 +2,6 @@ import 'package:delivery_app/utils/dimentions.dart';
 import 'package:delivery_app/widgets/BodyText.dart';
 import 'package:delivery_app/widgets/HeaderText.dart';
 import 'package:delivery_app/widgets/icon_and_text.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:delivery_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:dots_indicator/dots_indicator.dart';
@@ -93,7 +92,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                 right: Dimentions.width30,
                 bottom: Dimentions.height10 * 3),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(Dimentions.readius20),
+                borderRadius: BorderRadius.circular(Dimentions.radius20),
                 color: Colors.white,
                 boxShadow: const [
                   BoxShadow(

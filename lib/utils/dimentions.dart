@@ -10,19 +10,22 @@ class Dimentions {
 
 //dynamic height padding and margin
   static double height10 = screenHeight / 84.4;
-  static double height15 = screenHeight / 84.4 * 1.5;
-  static double height20 = screenHeight / 42.2;
+  static double height15 = height10 * 1.5;
+  static double height20 = height10 * 2;
+  static double height30 = height10 * 3;
+  static double height45 = height10 * 4.5;
 
 //dynamic width padding and margin
   static double width10 = screenWidth / 84.4;
-  static double width15 = screenWidth / 84.4 * 1.5;
-  static double width20 = screenWidth / 42.2;
-  static double width30 = screenWidth / 42.2 * 1.5;
+  static double width15 = width10 * 1.5;
+  static double width20 = width10 * 2;
+  static double width30 = width10 * 3;
 
   static double font20 = screenHeight / 42.2;
   static double font12 = screenHeight / (42.2 * 20 / 12);
 
-  static double readius15 = screenHeight / 56.2;
-  static double readius20 = screenHeight / 42.2;
-  static double raduis30 = screenHeight / 28.1;
+  static double radius10 = screenHeight / 84.4;
+  static double radius15 = radius10 * 1.5;
+  static double radius20 = radius10 * 2;
+  static double raduis30 = radius10 * 3;
 }

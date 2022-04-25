@@ -15,7 +15,6 @@ class BodyText extends StatelessWidget {
     this.height = 1.2,
   }) : super(key: key);
 
-
   @override
   Widget build(BuildContext context) {
     return Text(
