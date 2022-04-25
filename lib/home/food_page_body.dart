@@ -19,7 +19,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
 
   var _currPageValue = 0.0;
   final double _scaleFactor = 0.8;
-  final double _height = 220;
+  final double _height = Dimentions.pageViewContainer;
 
   @override
   void initState() {
@@ -44,7 +44,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       children: [
         Container(
           //color: Colors.blueAccent,
-          height: 320,
+          height: Dimentions.pageView,
           child: PageView.builder(
               controller: pageController,
               itemCount: 5,
@@ -74,10 +74,11 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       transform: transMatrix,
       child: Stack(children: [
         Container(
-            height: 220,
-            margin: EdgeInsets.only(left: 10, right: 10),
+            height: Dimentions.pageViewContainer,
+            margin: EdgeInsets.only(
+                left: Dimentions.width10, right: Dimentions.width10),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(Dimentions.raduis30),
                 color: index.isEven ? Color(0XFF69c5df) : Color(0XFF783a2f),
                 image: const DecorationImage(
                   fit: BoxFit.cover,
@@ -86,10 +87,13 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         Align(
           alignment: Alignment.bottomCenter,
           child: Container(
-            height: 120,
-            margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
+            height: Dimentions.pageViewTextContainer,
+            margin: EdgeInsets.only(
+                left: Dimentions.width30,
+                right: Dimentions.width30,
+                bottom: Dimentions.height10 * 3),
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(Dimentions.readius20),
                 color: Colors.white,
                 boxShadow: const [
                   BoxShadow(
@@ -107,12 +111,16 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   )
                 ]),
             child: Container(
-              padding: EdgeInsets.only(top: 15, left: 15, right: 20),
+              padding: EdgeInsets.only(
+                  top: Dimentions.height15,
+                  left: Dimentions.height15,
+                  right: Dimentions.height20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   HeaderText(text: 'Mushroom Stew'),
-                  const SizedBox(height: 10),
+                  SizedBox(height: Dimentions.height10),
+                  //Comment Section
                   Row(
                     children: [
                       Wrap(
@@ -132,7 +140,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                       BodyText(text: 'comments')
                     ],
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: Dimentions.height20),
+                  //time and distance
                   Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       // ignore: prefer_const_literals_to_create_immutables
                       children: [
