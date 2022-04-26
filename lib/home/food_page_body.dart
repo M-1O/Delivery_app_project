@@ -90,7 +90,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             margin: EdgeInsets.only(
                 left: Dimentions.width30,
                 right: Dimentions.width30,
-                bottom: Dimentions.height10 * 3),
+                bottom: Dimentions.height30),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(Dimentions.radius20),
                 color: Colors.white,

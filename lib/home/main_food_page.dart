@@ -20,7 +20,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
         children: [
           Container(
             margin: EdgeInsets.only(
-                top: Dimentions.height20 * 3, bottom: Dimentions.height15),
+                top: Dimentions.height45, bottom: Dimentions.height15),
             padding: EdgeInsets.only(
                 left: Dimentions.width20, right: Dimentions.width20),
             //add scrolling parameter
@@ -43,12 +43,11 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 ),
                 Center(
                   child: Container(
-                    width: 45,
-                    height: 45,
+                    width: Dimentions.height45,
+                    height: Dimentions.height45,
                     child: const Icon(Icons.search, color: Colors.white),
                     decoration: BoxDecoration(
-                      borderRadius:
-                          BorderRadius.circular(Dimentions.raduis30),
+                      borderRadius: BorderRadius.circular(Dimentions.raduis30),
                       color: AppColors.mainColor,
                     ),
                   ),
