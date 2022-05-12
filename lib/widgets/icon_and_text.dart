@@ -1,3 +1,4 @@
+import 'package:delivery_app/utils/dimentions.dart';
 import 'package:delivery_app/widgets/BodyText.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -19,6 +20,7 @@ class IconAndText extends StatelessWidget {
         Icon(
           icon,
           color: iconColor,
+          size: Dimentions.iconSize24,
         ),
         const SizedBox(width: 5),
         BodyText(text: text)

@@ -22,7 +22,7 @@ class BodyText extends StatelessWidget {
       maxLines: 1,
       style: TextStyle(
         color: color,
-        fontFamily: 'Roboto',
+        fontFamily: 'Open Sans',
         fontSize: size == 0 ? Dimentions.font12 : size,
         height: height,
       ),

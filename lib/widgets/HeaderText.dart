@@ -8,20 +8,20 @@ class HeaderText extends StatelessWidget {
   double size;
   TextOverflow overflow;
 
-  HeaderText(
-      {Key? key,
-      this.color = const Color(0xFF332d2b),
-      required this.text,
-      this.size = 0,
-      this.overflow = TextOverflow.ellipsis})
-      : super(key: key);
+  HeaderText({
+    Key? key,
+    this.color = const Color(0xFF332d2b),
+    required this.text,
+    this.size = 0,
+    this.overflow = TextOverflow.ellipsis,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
       overflow: overflow,
-      style: GoogleFonts.roboto(
+      style: GoogleFonts.openSans(
         color: color,
         fontWeight: FontWeight.w500,
         fontSize: size == 0 ? Dimentions.font20 : size,
